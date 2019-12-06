@@ -3765,6 +3765,7 @@ tbody.collapse.show {
   border-radius: 0.25rem; }
 
 .popover {
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -5850,10 +5851,10 @@ code {
 html,
 body {
   font-size: 14px; }
-@media (max-width: 599px) {
+/*@media (max-width: 599px) {
   html,
   body {
-    font-size: 20px; } }
+    font-size: 20px; } }*/
 
 h1,
 .h1 {
@@ -12308,7 +12309,9 @@ section + section {
 .temp .logo-section-text p {
   margin: 0; }
 
-.temp .wrapper {
+.temp .wrapper,
+.temp #root,
+.temp .App {
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;
@@ -12355,9 +12358,9 @@ section + section {
   padding: 10px 20px;
   position: relative;
   width: 100%; }
-@media (max-width: 899px) {
+/*@media (max-width: 899px) {
   .temp .desktop-nav {
-    display: none; } }
+    display: none; } }*/
 .temp .desktop-nav::after {
   border-bottom: 2px solid #fff;
   bottom: 0;
@@ -12534,7 +12537,8 @@ section + section {
   color: #9d9fb4; }
 
 .temp .navbar {
-  font-size: 1rem; }
+  font-size: 1rem;
+  background-color: transparent !important;}
 @media (max-width: 599px) {
   .temp .navbar {
     font-size: 0.7rem; } }
@@ -12610,6 +12614,136 @@ section + section {
   .representative-dashboard .global-menu-client-select {
     left: 360px;
     transition: left 0.5s; } }
+
+/* css täiendused */
+
+.popover {
+  width: 300px;
+}
+
+.popover-content {
+  text-align: center;
+}
+
+.tab-info .row {
+  margin-bottom: 10px;
+}
+.tab-info .d-flex > div {
+  padding: 10px;
+  padding-top: 0;
+}
+.tab-info .d-flex > div p {
+  margin-bottom: .5rem;
+}
+.tab-info .d-flex > div p:last-of-type {
+  margin-bottom: 0;
+}
+.tab-info .title {
+  color: #0083ba;
+}
+.tab-info .d-flex > div:first-of-type {
+  min-width: 150px;
+  max-width: 150px;
+}
+.tab-info .d-flex > div:last-of-type {
+   border-bottom: 1px solid #e8e8e8;
+   width: 100%;
+   margin-left: 20px;
+}
+.tab-info .d-flex > div:last-of-type h4 {
+  font-size: 14px;
+}
+.tab-info .row:last-of-type .d-flex > div:last-of-type {
+  border: none;
+}
+
+.tab-info .d-flex div > ul.desc-markup {
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+.tab-info .d-flex div ul.desc-markup:last-of-type {
+  margin-bottom: 0;
+}
+
+#sidebar {
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  background: #005aa3;
+  z-index: 1000;
+  width: 250px;
+  max-width: 250px;
+}
+
+#sidebar ol {
+  padding: 0;
+  text-align: left;
+  margin-top: 93px;
+}
+
+#sidebar ol li {
+  padding: 10px 20px;
+  color: #fff;
+  text-align: left;
+  border-bottom: 1px solid #003a68;
+  transition: all .1s ease-in;
+}
+
+#sidebar ol li:hover {
+  background: #004a86;
+}
+
+#sidebar .active {
+  background: #004a86;
+}
+
+#sidebar ol li:first-of-type {
+  border-top: 1px solid #003a68;
+}
+
+.navbar-nav {
+  background: #fff;
+}
+
+.push {
+  padding-left: 250px;
+}
+
+.table.align-middle td {
+  vertical-align: middle;
+}
+
+.temp .desktop-nav {
+  max-width: 100%;
+}
+
+footer {
+  border-top: none;
+}
+
+.temp .desktop-nav .nav-item {
+  justify-content: center !important;
+  padding: 0;
+}
+
+.temp .desktop-nav .nav-item.with-logo {
+  width: 100%;
+}
+
+.temp .desktop-nav .nav-item.with-title {
+  white-space: nowrap;
+  padding: 0 20px;
+}
+
+.temp .desktop-nav .nav-item:last-of-type {
+  padding-left: 20px;
+}
+
+.temp .desktop-nav .nav-item:not(:last-of-type) {
+  border-right: 1px solid #ececec;
+}
 
 
 
