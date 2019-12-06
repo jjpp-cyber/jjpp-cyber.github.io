@@ -20,7 +20,8 @@
   "business": {
     "EE/COM/10112345": {
       "name": "HealthStartup OÜ",
-      "ntr": "10112345"
+      "ntr": "10112345",
+      "appname" : "HealthStartup"
     },
     "EE/GOV/70009770": {
       "name": "Tervise ja Heaolu Infosüsteemide Keskus",
